@@ -24,6 +24,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 #app.layout is website main structure layout
+#pass the table object to app layout using user defined-function 
 app.layout = html.Div(children=[
     html.H4(children='US Agriculture Exports (2011)'),
     generate_table(df)
